@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import GetData from './GetData';
+import NavBar from './components/NavBar';
+import CurrentWeather from './components/currentConditions/CurrentWeather';
 
 
 function App() {
 
   return (
     <div>
-      <GetData />
+      <NavBar/>
+      <CurrentWeather/>
     </div>
   )
 }
