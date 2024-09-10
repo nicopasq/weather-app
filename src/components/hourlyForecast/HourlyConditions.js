@@ -10,7 +10,7 @@ export default function HourlyConditions() {
                 UV: 7 ( High )
             </h1>
             <h1 className="conditionLabel">
-                Chance of Percip: %45
+                Chance of Percip: 45%
             </h1>
             <h1 className="conditionLabel">
                 Wind Speed: 5mph NW

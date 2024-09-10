@@ -11,7 +11,7 @@ export function Conditions(){
                 UV: 3 ( Low )
             </h1>
             <h1 className="conditionLabel">
-                Chance of Percip: %10
+                Chance of Percip: 10%
             </h1>
             <h1 className="conditionLabel">
                 Wind Speed: 10mph SE
