@@ -1,15 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
 import CurrentWeather from './components/currentConditions/CurrentWeather';
-
+import HourlyForecast from './components/hourlyForecast/HourlyForecast';
+import SunAndMoon from './components/sunAndMoon/SunAndMoon';
 
 function App() {
 
   return (
     <div>
-      <NavBar/>
-      <CurrentWeather/>
+      <SunAndMoon/>
+      <NavBar />
+      <CurrentWeather />
+      <HourlyForecast/>
     </div>
   )
 }

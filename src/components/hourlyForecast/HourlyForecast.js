@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
-import './currentConditions.css'
+import './hourly.css'
 import { Button, Icon } from "@mui/material";
-import { Conditions } from "./Conditions";
+import HourlyConditions from "./HourlyConditions";
 
-export default function CurrentWeather() {
+export default function HourlyForecast() {
     const [unit, setUnit] = useState('F')
-    const [temp, setTemp] = useState(57)
+    const [temp, setTemp] = useState(85)
 
     function changeUnit() {
         if (unit === 'F') {
             setUnit('C')
-            setTemp(Math.round(13.89))
+            setTemp(Math.round(29.44))
         } else if (unit === 'C') {
             setUnit('F')
-            setTemp(57)
+            setTemp(85)
         }
     }
 
@@ -34,20 +34,16 @@ export default function CurrentWeather() {
 
 
     return (
-        <div className="currentWeatherComp">
-            <div className="currentWeather">
-                <h1>Current</h1>
+        <div className="hourlyForecastComp">
+            <div className="hourlyWeather">
+                <h1>3:00 PM</h1>
                 <div className="unitButtons">
                     <Button onClick={changeUnit} variant="outlined" sx={unitButtonStyle}>Change Unit</Button>
                 </div>
-                <h1 className="currentTemp">{temp}{'\u00B0'}{unit}</h1>
+                <h1 className="hourlyTemp">{temp}{'\u00B0'}{unit}</h1>
                 <WbSunnyIcon sx={weatherIconStyle} />
             </div>
-            <Conditions />
-            <div className="hourlyForecast">
-
-            </div>
-
+            <HourlyConditions />
         </div>
     )
 }
