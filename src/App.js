@@ -1,4 +1,5 @@
 import './App.css';
+import DailyForecast from './components/7DayForecast/DailyForecast';
 import NavBar from './components/NavBar';
 import CurrentWeather from './components/currentConditions/CurrentWeather';
 import HourlyForecast from './components/hourlyForecast/HourlyForecast';
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <CurrentWeather />
       <HourlyForecast/>
+      <DailyForecast/>
     </div>
   )
 }

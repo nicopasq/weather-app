@@ -1,0 +1,14 @@
+.dailyForecastDiv{
+    height: 25vh;
+    width: 77.5%;
+    position: absolute;
+    bottom: 3vh;
+    left: 20vh;
+    display: flex;
+}
+.cardContainer{
+    text-align: center;
+    width: 10vw;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
