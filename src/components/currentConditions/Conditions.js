@@ -1,20 +1,22 @@
 import React from "react";
 
-export function Conditions(){
+export function Conditions({ conditionsObj }) {
+
+    console.log(conditionsObj)
 
     return (
         <div className="conditionsDiv">
             <h1 className="conditionLabel">
-                AQI: Good
+                Humidity : {conditionsObj.humidity}%
             </h1>
             <h1 className="conditionLabel">
-                UV: 3 ( Low )
+                Chance of Percip: {conditionsObj.precip}%
             </h1>
             <h1 className="conditionLabel">
-                Chance of Percip: 10%
+                Wind Direction {conditionsObj.wind_dir}
             </h1>
             <h1 className="conditionLabel">
-                Wind Speed: 10mph SE
+                Wind Speed: {conditionsObj.wind_speed}mph
             </h1>
         </div>
     )
